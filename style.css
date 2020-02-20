@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url(hero.jpg) no-repeat 50% 50% #000;
+    background: #000;
     background-size: cover;
     font-size: 10px;
     font-family: Helvetica Neue;
@@ -17,6 +17,7 @@ h1 {
 }
 
 .rev-block {
+    margin-left: 2rem;
     position: absolute;
 }
 
@@ -129,3 +130,14 @@ h1 {
     height: 40em;
     background-blend-mode: color;
 }
+
+
+/* swup */
+.transition-fade {
+    transition: .4s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
