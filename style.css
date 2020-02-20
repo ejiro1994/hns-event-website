@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background: url(hero.jpg) no-repeat 50% 50% #000;
     background-size: cover;
@@ -9,14 +10,16 @@ body {
     font-family: Helvetica Neue;
     color: #fff
 }
+
 h1 {
-    
     /* transform: translate(-50%, -50%); */
     /* z-index: 1; */
 }
+
 .rev-block {
     position: absolute;
 }
+
 .rev-block span {
     opacity: 0;
     animation: appear-text .0001s linear both;
@@ -28,6 +31,7 @@ h1 {
     text-transform: uppercase;
     padding: .4em 1em;
 }
+
 .rev-block:after {
     content: '';
     top: 0;
@@ -39,6 +43,7 @@ h1 {
     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) both;
     animation-delay: 1s;
 }
+
 @keyframes rev-block {
     0% {
         left: 0;
@@ -53,6 +58,7 @@ h1 {
         width: 0%;
     }
 }
+
 @keyframes appear-text {
     0% {
         opacity: 0;
@@ -61,16 +67,18 @@ h1 {
         opacity: 1;
     }
 }
+
 #one-more span {
     animation-delay: 2s;
 }
+
 #one-more.rev-block:after {
     background: rgb(113, 39, 39);
     animation-delay: 1.4s
 }
 
-
 /* mobile nav register  */
+
 .mob-nav-register {
     height: 80px;
     background: #fff;
@@ -84,12 +92,9 @@ h1 {
 .mob-nav-register h1 {
     /* all: unset; */
     text-transform: capitalize;
-
-
     font-size: 17px;
     color: #000;
     font-weight: 500;
-
 }
 
 .event-date {
@@ -99,18 +104,26 @@ h1 {
 
 .event-location {
     font-weight: 700;
-    text-transform: capitalize;    
+    text-transform: capitalize;
 }
 
-.mob-register-btn, .mob-register-btn:active  {
+.mob-register-btn, .mob-register-btn:active {
     all: unset;
     padding: 13px 23px;
-    background: rgb(255, 132, 0);
+    background: rgb(0, 157, 255);
     border-radius: 30px;
     color: #fff;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 1rem;
-
-
 }
 
+.hero-section {
+    background: /* top, transparent red */
+    linear-gradient( #A87C35, #A87C35), /* bottom, image */
+    url(imgs/venue.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40em;
+    background-blend-mode: color;
+}
