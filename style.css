@@ -102,7 +102,7 @@ h1 {
     text-transform: capitalize;    
 }
 
-.mob-register-btn {
+.mob-register-btn, .mob-register-btn:active  {
     all: unset;
     padding: 13px 23px;
     background: rgb(255, 132, 0);
@@ -113,3 +113,4 @@ h1 {
 
 
 }
+
