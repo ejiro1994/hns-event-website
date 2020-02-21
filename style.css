@@ -86,7 +86,7 @@ h1 {
 /* mobile nav register  */
 .mob-nav-register {
   height: 80px;
-  background: #fff;
+  background: linear-gradient(to bottom left, white, #e1e1e1);
   color: #000;
   display: flex;
   padding: 0 1em;
@@ -115,6 +115,7 @@ h1 {
   background: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
   border-radius: 30px;
   color: #000;
+  text-transform: capitalize;
   font-size: 0.9rem;
   cursor: pointer;
 }
@@ -170,6 +171,100 @@ html.is-animating .transition-fade {
   z-index: -1;
   object-fit: cover;
   object-position: top;
+}
+
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+
+.sessions-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background: url(imgs/HNS_Lion.png);
+  background-size: cover;
+  opacity: 0.4;
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+.menu-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.menu-nav ul a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.menu-nav ul a li {
+  margin-bottom: 0.9375rem;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
