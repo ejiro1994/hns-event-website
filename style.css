@@ -152,14 +152,15 @@ h1 {
 
   .hero-video {
       position: relative;   
-      height: 100vh;
+      height: 500px;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 48px;
       color: #fff;
-      background: rgba(0, 0, 0, 0.612);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) 40%, #000 100%);
+      
 
   }
 
@@ -173,4 +174,5 @@ h1 {
       top: 0;   
       z-index: -1;
       object-fit: cover;
+      object-position: top;
   }
