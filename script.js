@@ -1,1 +1,8 @@
-const swup = new Swup();
+const options = {
+    animateHistoryBrowsing: true,
+    linkSelector:
+    'a[href^="' +
+    window.location.origin +
+    '"]:not([data-no-swup]), a[href^="index"]:not([data-no-swup]), a[href^="#"]:not([data-no-swup])'
+};
+const swup = new Swup(options);
