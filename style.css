@@ -157,7 +157,6 @@ html.is-animating .transition-fade {
   color: #fff;
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) 40%, #000 100%); */
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.8) 80%, #000 100%);
-  /* background-blend-mode: color-burn */
 }
 
 .hero-video .video-bg {
