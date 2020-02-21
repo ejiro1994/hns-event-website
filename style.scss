@@ -117,12 +117,12 @@ h1 {
 
 .mob-register-btn, .mob-register-btn:active {
     all: unset;
-    padding: 13px 23px;
+    padding: 10px 23px 8px 23px;
     background: #E5B31E;
     border-radius: 30px;
     color: #000;
-    /* text-transform: capitalize; */
-    font-size: 1rem;
+    // text-transform: uppercase;
+    font-size: .9rem;
     cursor: pointer;
     // font-weight: bold;
 }
