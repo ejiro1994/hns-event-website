@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Gobold-Uplow';
+    src:url('fonts/webfonts_Gobold-Uplow/Gobold-Uplow.ttf.woff') format('woff'),
+        url('fonts/webfonts_Gobold-Uplow/Gobold-Uplow.ttf.svg#Gobold-Uplow') format('svg'),
+        url('fonts/webfonts_Gobold-Uplow/Gobold-Uplow.ttf.eot'),
+        url('fonts/webfonts_Gobold-Uplow/Gobold-Uplow.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +17,9 @@ body {
     background-size: cover;
     font-size: 10px;
     font-family: Helvetica Neue;
-    color: #fff
+    font-family: 'Gobold-Uplow';
+
+    color: #fff;
 }
 
 h1 {
@@ -85,7 +96,7 @@ h1 {
     background: #fff;
     color: #000;
     display: flex;
-    padding: 1em;
+    padding: 0 1em;
     align-items: center;
     justify-content: space-between
 }
@@ -113,7 +124,7 @@ h1 {
     /* text-transform: capitalize; */
     font-size: 1rem;
     cursor: pointer;
-    font-weight: bold;
+    // font-weight: bold;
 }
 
 .hero-section {
@@ -143,6 +154,7 @@ html.is-animating .transition-fade {
     text-transform: capitalize;
     font-size: 17px;
     color: #000;
+    text-transform: uppercase
 }
 
 .hero-video {
@@ -172,3 +184,4 @@ html.is-animating .transition-fade {
     object-fit: cover;
     object-position: top;
 }
+
