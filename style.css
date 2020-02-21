@@ -1,173 +1,169 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: #000;
-    background-size: cover;
-    font-size: 10px;
-    font-family: Helvetica Neue;
-    color: #fff
+  background: #000;
+  background-size: cover;
+  font-size: 10px;
+  font-family: Helvetica Neue;
+  color: #fff;
 }
 
 h1 {
-    /* transform: translate(-50%, -50%); */
-    /* z-index: 1; */
+  /* transform: translate(-50%, -50%); */
+  /* z-index: 1; */
 }
 
 .rev-block {
-    margin-left: 2rem;
-    position: absolute;
+  margin-left: 2rem;
+  position: absolute;
 }
 
 .rev-block span {
-    opacity: 0;
-    animation: appear-text .0001s linear both;
-    animation-delay: 1.4s;
-    /* font-family: poppins; */
-    font-weight: bold;
-    color: #fff;
-    font-size: 3rem;
-    text-transform: uppercase;
-    padding: .4em 1em;
+  opacity: 0;
+  animation: appear-text 0.0001s linear both;
+  animation-delay: 1.4s;
+  /* font-family: poppins; */
+  font-weight: bold;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 0.4em 1em;
 }
 
 .rev-block:after {
-    content: '';
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #E5B31E;
-    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) both;
-    animation-delay: 1s;
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #E5B31E;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) both;
+  animation-delay: 1s;
 }
 
 @keyframes rev-block {
-    0% {
-        left: 0;
-        width: 0%;
-    }
-    50% {
-        left: 0;
-        width: 100%
-    }
-    100% {
-        left: 100%;
-        width: 0%;
-    }
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
 }
-
 @keyframes appear-text {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 #one-more span {
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 #one-more.rev-block:after {
-    background: rgb(113, 39, 39);
-    animation-delay: 1.4s
+  background: #712727;
+  animation-delay: 1.4s;
 }
 
 /* mobile nav register  */
-
 .mob-nav-register {
-    height: 80px;
-    background: #fff;
-    color: #000;
-    display: flex;
-    padding: 1em;
-    align-items: center;
-    justify-content: space-between
+  height: 80px;
+  background: #fff;
+  color: #000;
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .mob-nav-register h1 {
-    /* all: unset; */
+  /* all: unset; */
 }
 
 .event-date {
-    font-size: 12px;
-    font-weight: 400;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .event-location {
-    font-weight: 700;
-    text-transform: capitalize;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .mob-register-btn, .mob-register-btn:active {
-    all: unset;
-    padding: 13px 23px;
-    background: #E5B31E;
-    border-radius: 30px;
-    color: #000;
-    /* text-transform: capitalize; */
-    font-size: 1rem;
-    cursor: pointer;
-    font-weight: bold;
+  all: unset;
+  padding: 13px 23px;
+  background: #E5B31E;
+  border-radius: 30px;
+  color: #000;
+  /* text-transform: capitalize; */
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .hero-section {
-    background: /* top, transparent red */
-    linear-gradient( #A87C35, #A87C35), /* bottom, image */
-    url(imgs/venue.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40em;
-    background-blend-mode: color;
+  background: linear-gradient(#A87C35, #A87C35), url(imgs/venue.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40em;
+  background-blend-mode: color;
 }
 
 /* swup */
-
 .transition-fade {
-    transition: .4s;
-    opacity: 1;
+  transition: 0.4s;
+  opacity: 1;
 }
 
 html.is-animating .transition-fade {
-    opacity: 0;
+  opacity: 0;
 }
 
 .event-title {
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 17px;
-    color: #000;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: #000;
 }
 
 .hero-video {
-    position: relative;
-    height: 500px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    color: #fff;
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) 40%, #000 100%); */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(228, 217, 184, .1) 40%, rgba(0, 0, 0, 0.8) 80%, #000 100%);
-    /* background-blend-mode: color-burn */
+  position: relative;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #fff;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) 40%, #000 100%); */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.8) 80%, #000 100%);
+  /* background-blend-mode: color-burn */
 }
 
 .hero-video .video-bg {
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    object-fit: cover;
-    object-position: top;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+  object-position: top;
 }
+
+/*# sourceMappingURL=style.css.map */
